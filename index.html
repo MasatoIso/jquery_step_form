@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQueryStepForm</title>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li class="step_nav">
+                <strong>Step1</strong>
+            </li>
+            <li class="step_nav">
+                <strong>Step2</strong>
+            </li>
+            <li class="step_nav">
+                <strong>Step3</strong>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <hr>
+
+    <form action="">
+        <span class="step">
+            <label for="">Name</label>
+            <input type="text">
+            <br>
+            <label for="">Sex</label>
+            <input type="radio" name="sex" value="1">Male
+            <input type="radio" name="sex" value="2">Female
+            <input type="radio" name="sex" value="3">Other
+        </span>
+        <span class="step">
+            <label for="">Email</label>
+            <input type="email">
+            <br>
+            <label for="">Password</label>
+            <input type="password">
+            <br>
+            <label for="">Phone_Number</label>
+            <input type="tel">
+        </span>
+        <span class="step">
+            <label for="">Other</label>
+            <textarea name="" id="" cols="50" rows="5"></textarea>
+        </span>
+
+        <hr>
+        <span class="next"><button type="button">Next</button></span>
+        <span class="back"><button type="button">Back</button></span>
+        <div class="submit"><button type="submit">Submit</button></div> 
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./step_form.js"></script>
+</body>
+</html>
